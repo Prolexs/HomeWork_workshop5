@@ -7,9 +7,9 @@ for( int i = 0; i < arr.Length; i++ )
    arr[i] = rand.Next(1,9);
  }
  Console.WriteLine("[{0}]", string.Join(", ", arr)); // Для наглядности выводим все элементы массива
- for (int i = 0; i < arr.Length; i++ ) 
+ for (int j = 0; j < arr.Length; j++ ) // нас учат во втором цикле for менять имя переменной, но работает все и без смены переменной, на сколько это не обходимо?
  {
-    if (arr[i] % 2 == 1)
-    sum += arr[i];
+    if (arr[j] % 2 != 0)
+    sum += arr[j];
  }
  Console.WriteLine($" сумма не четных чисел равна {sum} ");
